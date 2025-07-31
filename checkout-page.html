@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Restaurant|CHECKOUT PAGE</title> 
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <head>
+    <body>
+        <div id="header">
+            <img src="images/BARNYARD.png">
+        </div>
+        <div id="tabs-top">
+            <a href="index.html"> HOME </a>
+            <a href="menu-list.html"> MENU</a>
+            <a href="reservations.html">RESERVATIONS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="checkout-container">
+            <h1 class="checkout-heading">Secure Checkout</h1>
+            <form class="checkout-form">
+                <div class="input-section">
+                    <h2 class="section-heading">Shipping Information</h2>
+                    <div class="mb-4">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe"class="form-input" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" id="address" name="address" placeholder="123 Main St"class="form-input" required>
+                    </div>
+                    <div class="grid-half">
+                        <div>
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" id="city" name="city" placeholder="Uitenhage"class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="zip" class="form-label">Postal Code</label>
+                            <input type="text" id="zip" name="zip" placeholder="12345"class="form-input" required>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 24px;"> 
+                    <div class="input-section">
+                        <h2 class="section-heading">Payment Information</h2>
+                        <div class="mb-4">
+                            <label for="cardNumber" class="form-label">Card Number</label>
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX"class="form-input" required>
+                        </div>
+                        <div class="grid-half">
+                            <div>
+                                <label for="expiry" class="form-label">Expiry Date</label>
+                                <input type="text" id="expiry" name="expiry" placeholder="MM/YY"class="form-input" required>
+                            </div>
+                            <div>
+                                <label for="cvv" class="form-label">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123"class="form-input" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-section">
+                        <h2 class="section-heading">Order Summary</h2>
+                        <div class="summary-item">
+                            <span class="summary-label">Subtotal:</span>
+                            <span class="summary-value">R</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Shipping:</span>
+                            <span class="summary-value">R</span>
+                        </div>
+                        <div class="summary-total">
+                            <span class="total-label">Total:</span>
+                            <span class="total-value">R</span>
+                        </div>
+                    </div>
+                    <a href="thank-you.html" class="sendbtn" style="display: inline-block; padding: 10px 20px; text-decoration: none;
+                         background: linear-gradient(180deg,#f6915e,beige,#f6915e);; color:#555; border-radius: 5px;">
+                        Complete Payment
+                    </a> 
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
